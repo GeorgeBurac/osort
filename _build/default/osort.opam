@@ -1,0 +1,14 @@
+opam-version: "2.0"
+name: "osort"
+synopsis: "Minimal OCaml project for starting a new one"
+maintainer: "Gheorghe Burac"
+authors: "Gheorghe Burac"
+license: "Unlicense"
+homepage: "To be added"
+bug-reports: "To be added"
+depends: [
+  "dune" {build}
+  "cmdliner"
+]
+build: ["dune" "build" "-j" jobs "@install"]
+dev-repo: "To be added"

@@ -1,7 +1,4 @@
 name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ master ]
@@ -29,5 +26,8 @@ jobs:
       with:
         ocaml-version: ${{ matrix.ocaml-version }}
     # Runs a set of commands using the runners shell
+    - run: opam pin add osort -n .
+    - run: opam depext -yt osort
+    - run: opam install -t . --deps-only
     - run: opam exec -- dune build
     - run: opam exec -- dune runtest      

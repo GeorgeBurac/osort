@@ -1,6 +1,6 @@
 
 
-![Build](To be added)
+![Build](https://github.com/GeorgeBurac/osort/workflows/CI/badge.svg)
 
 # Hello
 

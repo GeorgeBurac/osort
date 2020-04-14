@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/osort/META"
-  "_build/install/default/lib/osort/dune-package"
-  "_build/install/default/lib/osort/opam"
-]
-doc: [
-  "_build/install/default/doc/osort/README.md"
-]
